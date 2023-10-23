@@ -1,0 +1,240 @@
+
+/*----------chrome-ziro---------*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*----------chrome-ziro---------*/
+
+body{
+	font-family: 'Roboto', sans-serif;
+	background-color: #EFEFEF;
+	color: #333333;
+	font-size: 14px;
+}
+.wrapper{
+	max-width: 1110px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+.nav__navul{
+	display: flex;
+	justify-content: center;
+	padding-left: 0;
+	padding-bottom: 15px;
+	
+}
+.nav__navul > li{
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 17px;
+}
+
+.nav__navul > li > a{
+	color: #333333;
+	transition: 0.1s ease;
+}
+
+.nav__navul > li > a:hover{
+	color: #5f5f5f;
+	font-weight: 500;
+	border-bottom: 1px solid #a2a2a2;
+}
+.header{
+	background-color: #fff;
+
+}
+.header__top{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 0;
+}
+.logo{
+	color: #66C05D;
+	font-size: 36px;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+}
+.logo__img{
+	display: block;
+	width: 80px;
+	height: 80px;
+	background-image: url(../img/logo.svg);
+	margin-right: 20px;
+}
+.header__info span{
+	margin-right: 40px;
+	font-size: 16px;
+}
+.header__info button{
+	font-size: 14px;
+	padding: 12px 27px;
+	
+	border-radius: 20px;
+	border: 2px solid #66C05D;
+	background-color: transparent;
+	transition: 0.2s ease;
+	cursor: pointer;
+}
+.header__info button:hover{
+	background-color: #66C05D;
+	color: #FFF;
+}
+.header__down{
+	padding: 15px ;
+}
+.header__down .nav__navul{
+	font-size: 16px;
+	color: black;
+}
+hr{
+	border: none;
+	background-color: #EFEFEF;
+	height: 2px;
+}
+.banner{
+	background-image: url(../img/Rectangle\ 2.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-top: 200px;
+	padding-bottom: 200px;
+	color: #fff;
+}
+.title{
+	font-size: 48px;
+	font-weight: 700;
+	margin-bottom: 50px;
+}
+.title__h2{
+	font-size: 24px;
+	font-weight: 700;
+	margin-top: 80px;
+}
+.banner p{
+	margin-bottom: 50px;
+	max-width: 308px;
+}
+.btn{
+	color: #fff;
+	text-decoration: none;
+	border-radius: 20px;
+	border: 2px solid #fff;
+	background-color: transparent;
+	padding: 10px 37px;
+	transition: 0.4s ease;
+}
+.btn:hover{
+	background-color: #fff;
+	color: #333333;
+}
+.bg__white{
+	background-color: #fff;
+}
+.bg__green{
+	background-color: #66C05D;
+	color: #fff;
+	padding: 15px 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.bg__green_item{
+	flex: 0 0 60%;
+}
+.bg__green_img{
+	text-align: center;
+	flex: 0 0 40%;
+}
+.bg__green h3{
+	font-size: 18px;
+	font-weight: 700;
+}
+.bg__green input{
+	font-size: 14px;
+	border: 1px solid #fff;
+	border-radius: 20px;
+	padding: 10px 15px;
+}
+.bg__green .btn{
+	display: block;
+	text-align: center;
+	max-width: 250px;
+}
+.grid{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 30px;
+}
+
+.grid__item_title{
+	grid-column: 1/4;
+	grid-row: 1/2;
+}
+.grid__item_img{
+	grid-column: 4/5;
+	grid-row: 1/2;
+	text-align: center;
+}
+.grid__item_left{
+	grid-column: 1/3;
+	grid-row: 3/4;
+}
+.grid__item_right{
+	grid-column: 3/5;
+	grid-row: 3/4;	
+}
+.grid__item_catalog{
+	text-align: center;
+	padding-top: 8px;
+	padding-bottom: 100px;
+}
+.grid__item_catalog .bg__white{
+	padding: 65px 25px;
+}
+.grid__price{
+	font-size: 21px;
+	font-weight: 500;
+	margin-bottom: 26px;
+}
+.grid__btn{
+	padding: 10px 25px;	
+	border-radius: 20px;
+	border: 2px solid #66C05D;
+	background-color: #66C05D;
+	color: #FfF;
+	transition: 0.2s ease;
+	cursor: pointer;
+	
+}
